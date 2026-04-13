@@ -17,8 +17,8 @@ export default function ProductCard({ product }) {
           <Link className="btn btn-secondary" to={`/products/${product.id}`}>
             View Details
           </Link>
-         
-        </div>
+         <button className="btn btn-primary">Add to Cart</button>
+        </div> 
       </div>
     </div>
   );

@@ -4,12 +4,14 @@ import Home from './pages/Home.jsx'
 import Auth from './pages/Auth.jsx'
 import Cart from './pages/Cart.jsx'
 import Navbar from './components/Navbar.jsx'
+import AuthProvider from './context/AuthContext.jsx'
 
 
 function App() {
   
 
   return (
+    <AuthProvider>
   <div className="app">
     <Navbar />
     <Routes>
@@ -18,6 +20,7 @@ function App() {
     <Route path="/cart" element={<Cart/>}  />
     </Routes> 
     </div>
+    </AuthProvider>
   )
 }
 
